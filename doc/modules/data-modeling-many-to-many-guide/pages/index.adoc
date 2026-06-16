@@ -314,7 +314,7 @@ public class VisitSpecialtyService {
 
     // Adds multiple Specialties to a Visit
     public void addSpecialtiesToVisit(Visit visit, List<Specialty> specialties) {
-        visit.getSpecialties().addAll(specialties);
+        visit.getRequiredSpecialties().addAll(specialties);
         dataManager.save(visit);
     }
 
